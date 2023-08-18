@@ -1,15 +1,12 @@
 
 ![Shema infra](https://github.com/YacineBOUHALA/ITravel/blob/master/src/assets/images/infra.png)
 
-==============================================|Auteur|================================================
-Massi HEDJLOUM
-Yacine BOUHALA
 
-=============================================|Introduction|=============================================
+===============================|Introduction|===============================
 
 ITravel est une application destinée à une population qui aime voyager. Le but de cette dernière est de permettre à ces personnes de conserver une trace de leurs voyages et souvenirs dans un espace privé qui leur est dédié. Cela leur permettrait de garder une trace de tous les endroits visités avec un commentaire spécifique et une photo pour chaque lieu, afin d'immortaliser tous leurs bons moments de vacances et de voyage.
 
-=============================================|Application|===============================================
+==========================|Application|====================================
 
 Pour pouvoir utiliser l'application, suivez ces étapes :
   * Clonez ou téléchargez l'application.
@@ -19,7 +16,7 @@ Pour pouvoir utiliser l'application, suivez ces étapes :
   * Lancez la commande `npm start` pour démarrer l'application.
   * Ajoutez vos clés dans git pour permettre le diploiment automatique
 
-=============================================|Aspects techniques|============================================
+===================|Aspects techniques|====================================
 
 L'application repose sur la technologie Amplify d'AWS et comprend notamment :
   - Une base de données DynamoDB :
@@ -41,6 +38,11 @@ Le déploiement automatique a lieu exclusivement sur la branche nommée `deploym
 Un esLinter a été mis en place pour vérifier la syntaxe du code et aider a écrir du clean code.
 
 
-==========================================|Fonctionalité non terminée|=========================================
+===================|Fonctionalité non terminée|==========================
 
 -mise a jour d'un élément(update)
+-navbar
+=================================|Auteur|================================
+* Yacine BOUHALA
+
+* Massi HEDJLOUM
