@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  background-color: #f9e1ca;
+  background-image: linear-gradient(0deg, #f9e1ca 0%, #bff1f7 100%);
+
+  font-family: Open Sans;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: Open Sans;
+}

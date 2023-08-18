@@ -1,0 +1,188 @@
+body {
+  font-family: Open Sans;
+}
+.uploadFile {
+  input {
+    width: 1px;
+    height: 1px;
+  }
+  font-size: 23px;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  .label-btn {
+    .button {
+      z-index: -1;
+    }
+    &:hover {
+      background-color: lightgray;
+      cursor: pointer;
+    }
+  }
+}
+
+.title {
+  font-family: Open Sans;
+}
+
+.description {
+  font-size: 20px;
+  font-family: Open Sans;
+  color: #889099;
+}
+.text {
+  width: 688px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 24px;
+  max-width: 95%px;
+}
+.areYouLooking,
+.required {
+  align-self: stretch;
+}
+
+.formText {
+  align-self: stretch;
+}
+.input,
+.input1 {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  font-family: Open Sans;
+  font-size: 16px;
+  background-color: transparent;
+  flex: 1;
+  border-radius: 4px;
+  flex-direction: column;
+  padding: 16px 12px;
+}
+.input {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.input1 {
+  justify-content: center;
+}
+
+.input1,
+.inputRow {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+}
+.inputRow {
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+
+.input2,
+.submit {
+  font-size: 16px;
+  font-family: Open Sans;
+}
+.input2 {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  height: 105px;
+  max-width: 100%;
+  resize: none;
+  align-self: stretch;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.submit {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  width: 203.12px;
+}
+.formSubmitButton {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: #4a60a1;
+  border-radius: 4px;
+  width: 222px;
+  height: 46px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.formFields {
+  align-self: stretch;
+  gap: 10px;
+}
+.contents,
+.form,
+.formFields {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.form {
+  align-self: stretch;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.03);
+  padding: 28px 30px;
+  gap: 17px;
+  text-align: left;
+  font-size: 24px;
+  color: #434343;
+  font-family: Open Sans;
+}
+.contents {
+  flex: 1;
+  padding: 0 10px;
+  box-sizing: border-box;
+  gap: 40px;
+  max-width: 900px;
+}
+.form-container {
+  align-self: stretch;
+  background-color: #edeff6;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 50px 5px;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+  font-size: 40px;
+  color: #1e2640;
+  font-family: Open Sans;
+}
+@media screen and (max-width: 1200px) {
+  .text {
+    max-width: 95%;
+  }
+}
+@media screen and (max-width: 960px) {
+  .text {
+    align-self: stretch;
+    width: auto;
+  }
+  .input,
+  .input1 {
+    flex: unset;
+    align-self: stretch;
+  }
+  .inputRow {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}

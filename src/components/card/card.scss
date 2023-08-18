@@ -1,0 +1,143 @@
+@import '../../theme/theme.scss';
+
+.image-container {
+  max-width: 100%;
+  overflow: hidden;
+  height: 240px;
+  flex-shrink: 0;
+  position: relative;
+  align-self: stretch;
+  border-radius: 5px 5px 0px 0px;
+  .image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s linear;
+    &:hover {
+      transform: scale(1.2);
+      transition: all 1s linear;
+    }
+  }
+}
+.address {
+  flex: 1;
+  font-weight: 500;
+}
+.propertyName {
+  align-self: stretch;
+  display: flex;
+  padding: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.div {
+  position: relative;
+  font-weight: 600;
+  width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.placeName {
+  align-self: stretch;
+  display: flex;
+  padding: 0 10px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  color: #4a60a1;
+}
+
+.client-comments {
+  position: relative;
+  padding: 0 10px;
+  font-size: 13px;
+  font-weight: 500;
+  p {
+    margin: 0;
+    font-family: Open Sans;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  max-height: 35px;
+  overflow: hidden;
+}
+
+.userName {
+  font-weight: 500;
+}
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5.81px;
+}
+
+.footer-card-container {
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 15px;
+}
+.card1 {
+  border: 1px solid #000;
+  width: 350px;
+  // height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: 14.5px;
+  color: #363a3d;
+  font-family: Open Sans;
+  border-color: rgba(219, 234, 254, 1);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 1);
+
+  &:hover {
+    .image {
+      transform: scale(1.2);
+      transition: all 1s linear;
+    }
+  }
+  .card-content {
+    padding: 10px;
+    width: 100%;
+  }
+}
+.card1:hover {
+  background-color: #f9e1ca;
+  background-image: linear-gradient(0deg, #f9e1ca 0%, #bff1f7 100%);
+  cursor: pointer;
+}
+@media screen and (max-width: 420px) {
+  .card1 {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+}
+
+@include mobile {
+  .card-content {
+    .propertyName {
+      padding: 15px;
+      .address {
+        font-size: 20px;
+        height: 50px;
+        overflow: hidden;
+      }
+    }
+    .placeName {
+      font-size: 25px;
+    }
+    .client-comments {
+      font-size: 20px;
+    }
+    .userName {
+      font-size: 20px;
+    }
+  }
+}

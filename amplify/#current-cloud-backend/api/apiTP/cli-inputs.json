@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "paths": {
+    "/places": {
+      "name": "/places",
+      "lambdaFunction": "awsamplifycicd20fe6861",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create",
+          "read",
+          "update",
+          "delete"
+        ]
+      }
+    }
+  }
+}

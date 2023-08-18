@@ -1,0 +1,14 @@
+{
+  "resourceName": "dynamof74d035c",
+  "tableName": "travelPlacess",
+  "partitionKey": {
+    "fieldName": "id",
+    "fieldType": "string"
+  },
+  "sortKey": {
+    "fieldName": "placeName",
+    "fieldType": "string"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}

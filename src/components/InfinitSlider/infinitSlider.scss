@@ -1,0 +1,31 @@
+@import '../../theme/theme.scss';
+.slick_container {
+  padding: 0px 0px 25px 0px;
+  background-color: #23272A;
+  .texts {
+    width: 80%;
+    margin: auto;
+    color: white;
+    padding-bottom: 50px;
+    h1 {
+      font-size: 60px;
+    }
+    p {
+      width: 80%;
+      margin-left: 50px;
+      font-size: 25px;
+    }
+    @include mobile {
+      p {
+        width: 95%;
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+.partner_slider_container {
+  display: flex !important;
+  justify-content: space-between;
+  width: 80%;
+}

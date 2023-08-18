@@ -1,0 +1,156 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-awsamplifycicd-dev-160031-authRole",
+      "UnauthRoleArn": "arn:aws:iam::318727587946:role/amplify-awsamplifycicd-dev-160031-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::318727587946:role/amplify-awsamplifycicd-dev-160031-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-awsamplifycicd-dev-160031-deployment",
+      "UnauthRoleName": "amplify-awsamplifycicd-dev-160031-unauthRole",
+      "StackName": "amplify-awsamplifycicd-dev-160031",
+      "StackId": "arn:aws:cloudformation:us-east-2:318727587946:stack/amplify-awsamplifycicd-dev-160031/47e93930-32cf-11ee-89ab-0ab9ed53405f",
+      "AmplifyAppId": "d18b0nkedaiw4s",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-awsamplifycicd-dev-160031-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+    }
+  },
+  "api": {
+    "apiTP": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "awsamplifycicd20fe6861"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway",
+      "output": {
+        "ApiName": "apiTP",
+        "RootUrl": "https://5up6pq6vu3.execute-api.us-east-2.amazonaws.com/dev",
+        "ApiId": "5up6pq6vu3"
+      },
+      "lastPushTimeStamp": "2023-08-13T21:40:56.017Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-awsamplifycicd-dev-160031-deployment/amplify-cfn-templates/api/apiTP-cloudformation-template.json",
+        "logicalId": "apiapiTP"
+      }
+    }
+  },
+  "auth": {
+    "awsamplifycicd08bce14e": {
+      "customAuth": false,
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL",
+          "PHONE_NUMBER"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito",
+      "output": {
+        "UserPoolId": "us-east-2_kczrP0cIw",
+        "AppClientIDWeb": "5t2998vgl5oc2rt88cp05pcvch",
+        "AppClientID": "48t6i8kbmr5k39u0jslsk7glkj",
+        "IdentityPoolId": "us-east-2:2573eda5-92bd-4934-bec1-b4c2f076e0af",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-2:318727587946:userpool/us-east-2_kczrP0cIw",
+        "IdentityPoolName": "awsamplifycicd08bce14e_identitypool_08bce14e__dev",
+        "UserPoolName": "awsamplifycicd08bce14e_userpool_08bce14e"
+      },
+      "lastPushTimeStamp": "2023-08-13T21:40:56.021Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-awsamplifycicd-dev-160031-deployment/amplify-cfn-templates/auth/awsamplifycicd08bce14e-cloudformation-template.json",
+        "logicalId": "authawsamplifycicd08bce14e"
+      }
+    }
+  },
+  "function": {
+    "awsamplifycicd20fe6861": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "output": {
+        "LambdaExecutionRoleArn": "arn:aws:iam::318727587946:role/awsamplifycicdLambdaRole95c18e1c-dev",
+        "Region": "us-east-2",
+        "Arn": "arn:aws:lambda:us-east-2:318727587946:function:awsamplifycicd20fe6861-dev",
+        "Name": "awsamplifycicd20fe6861-dev",
+        "LambdaExecutionRole": "awsamplifycicdLambdaRole95c18e1c-dev"
+      },
+      "lastPushTimeStamp": "2023-08-13T21:40:56.531Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-awsamplifycicd-dev-160031-deployment/amplify-cfn-templates/function/awsamplifycicd20fe6861-cloudformation-template.json",
+        "logicalId": "functionawsamplifycicd20fe6861"
+      },
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-awsamplifycicd-dev-160031-deployment",
+        "s3Key": "amplify-builds/awsamplifycicd20fe6861-4d316b6e544d70417632-build.zip"
+      },
+      "lastBuildTimeStamp": "2023-08-13T21:39:10.821Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2023-08-13T21:39:14.970Z",
+      "distZipFilename": "awsamplifycicd20fe6861-4d316b6e544d70417632-build.zip",
+      "lastPushDirHash": "YUjQzXD79QS40p2EfRp5s+he/Vg="
+    }
+  },
+  "hosting": {
+    "amplifyhosting": {
+      "lastPushTimeStamp": "2023-08-04T14:07:56.351Z",
+      "service": "amplifyhosting",
+      "type": "cicd"
+    }
+  },
+  "storage": {
+    "Images": {
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "S3",
+      "output": {
+        "BucketName": "cardimages160031-dev",
+        "Region": "us-east-2"
+      },
+      "lastPushTimeStamp": "2023-08-13T21:40:56.028Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-awsamplifycicd-dev-160031-deployment/amplify-cfn-templates/storage/cloudformation-template.json",
+        "logicalId": "storageImages"
+      }
+    },
+    "dynamof74d035c": {
+      "service": "DynamoDB",
+      "providerPlugin": "awscloudformation",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-awsamplifycicd-dev-160031-deployment/amplify-cfn-templates/storage/dynamof74d035c-cloudformation-template.json",
+        "logicalId": "storagedynamof74d035c"
+      },
+      "lastPushTimeStamp": "2023-08-13T21:40:56.031Z",
+      "output": {
+        "PartitionKeyName": "id",
+        "SortKeyName": "placeName",
+        "SortKeyType": "S",
+        "Region": "us-east-2",
+        "Arn": "arn:aws:dynamodb:us-east-2:318727587946:table/travelPlacess-dev",
+        "StreamArn": "arn:aws:dynamodb:us-east-2:318727587946:table/travelPlacess-dev/stream/2023-08-13T21:15:57.305",
+        "PartitionKeyType": "S",
+        "Name": "travelPlacess-dev"
+      },
+      "lastPushDirHash": "kJ0K35hQ9hlrgJKwx9yJTBE0HcQ="
+    }
+  }
+}

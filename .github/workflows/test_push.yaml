@@ -1,0 +1,52 @@
+name: "RUN ON EVERY PUSH"
+on:
+  push:
+    branches:
+      - deployment
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up npm
+        uses: actions/setup-node@v1
+        with:
+          node-version: "18.x"
+      - name: Install dependancesssssss
+        run: npm install
+      - name: Check code (indentation, camelcase vars, max char in line ...)
+        run: npm run lint
+      - name: Success cheking code with esLint
+        run: echo "Success! all code in all files respect the rules"
+      # - name: Send Notification on Success or Failure
+      #   if: ${{ job.status == 'success' || job.status == 'failure' }}
+      #   run: |
+      #     if [[ ${{ job.status }} == 'success' ]]; then
+      #       echo "Sending success notification..."
+      #       curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+      #         -d '{"body": "Success! All tests passed. 🎉"}' \
+      #         "https://api.github.com/repos/MassiHadjloum/aws-amplify-ci-cd/issues/1/comments"
+      #     else
+      #       echo "Sending failure notification..."
+      #       curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+      #         -d '{"body": "Test failure! Please check the workflow logs for details."}' \
+      #         "https://api.github.com/repos/MassiHadjloum/aws-amplify-ci-cd/issues/1/comments"
+      #     fi
+
+      # - name: Run testsssss
+      #   run: npm run test
+      # - name: Print success message
+      #   run: echo "Success! all the tests passed , the deployment could be done now"
+      # - name: install amplify
+      #   run: npm install -g @aws-amplify/cli
+      # - name: deploy with amplify
+      #   run: amplify push --yes
+      #   env:
+      #     AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY_ID }}
+      #     AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRET_ACCESS_KEY }} 
+      #     AWS_REGION: us-east-2
+      - name: seccess
+        run: echo -e  '\U0001F680'  "Success! deployment"
+
+    # steps:
+    # - uses: actions/checkout@v2

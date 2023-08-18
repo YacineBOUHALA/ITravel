@@ -1,0 +1,14 @@
+{
+  "resourceName": "Images",
+  "policyUUID": "faee0131",
+  "bucketName": "cardimages",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}
